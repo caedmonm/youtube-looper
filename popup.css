@@ -1,0 +1,9 @@
+:root { color-scheme: dark; font: 13px/1.5 system-ui, sans-serif; color: #edf2f7; background: #151c25; }
+* { box-sizing: border-box; } body { width: 380px; margin: 0; padding: 20px; }
+header { display: flex; gap: 12px; align-items: center; margin-bottom: 20px; } header > img { display: block; flex-shrink: 0; } h1 { margin: 0; font-size: 19px; } header p { margin: 0; color: #a9b8c8; }
+label { display: block; font-size: 12px; color: #b8c8d8; margin-bottom: 6px; } .save-row { display: flex; gap: 8px; } input { width: 100%; min-width: 0; background: #0d141d; border: 1px solid #405164; border-radius: 8px; color: inherit; padding: 9px; font: inherit; }
+button { font: inherit; color: #102b20; background: #8ce8b8; border: 0; border-radius: 8px; cursor: pointer; padding: 8px 10px; white-space: nowrap; } button:hover { filter: brightness(1.1); } button:disabled { opacity: .5; cursor: wait; }
+button:focus-visible, input:focus-visible { outline: 2px solid #8ce8b8; outline-offset: 2px; }
+#status { font-size: 12px; color: #a9b8c8; min-height: 18px; margin: 9px 0 16px; } #status.error { color: #ffb4aa; } .search-label { font-weight: 700; color: #edf2f7; }
+main { max-height: 370px; overflow-y: auto; margin-top: 14px; } section { margin-bottom: 18px; } h2 { font-size: 13px; margin: 0 0 7px; overflow-wrap: anywhere; color: #b8c8d8; }
+.loop { display: flex; gap: 8px; margin-bottom: 7px; } .open { text-align: left; width: 100%; min-width: 0; background: #253140; color: #edf2f7; white-space: normal; overflow-wrap: anywhere; } .open small { display: block; color: #8ce8b8; font-variant-numeric: tabular-nums; } .delete { background: transparent; color: #a9b8c8; padding: 7px; } .empty { color: #a9b8c8; }

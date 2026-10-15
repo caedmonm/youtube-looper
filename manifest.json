@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Practice Loop for YouTube",
+  "version": "1.1.0",
+  "description": "Mark a passage, slow it down, and repeat it on YouTube. Built for music practice.",
+  "permissions": ["storage"],
+  "icons": { "16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png" },
+  "action": {
+    "default_title": "Practice Loop — saved loops",
+    "default_popup": "popup.html",
+    "default_icon": { "16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png" }
+  },
+  "web_accessible_resources": [{ "resources": ["icons/icon-48.png"], "matches": ["https://www.youtube.com/*"] }],
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*"],
+    "js": ["loop-core.js", "library.js", "content.js"],
+    "run_at": "document_idle"
+  }]
+}
